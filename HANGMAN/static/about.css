@@ -1,0 +1,74 @@
+/* about.css */
+
+body {
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f8f9fa;
+}
+
+#about-content {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px; /* Increased padding for better spacing */
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    border-radius: 15px; /* Increased border radius for a rounded appearance */
+    display: flex;
+    flex-direction: column; /* Align children in a column */
+}
+
+h1, h2 {
+    color: #e74c3c; /* Changed heading color */
+    border-bottom: 2px solid #e74c3c;
+    padding-bottom: 10px; /* Increased padding below headings */
+    margin-bottom: 20px; /* Increased margin below headings */
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+ol, ul {
+    padding: 0;
+    margin: 15px 0; /* Increased margin for better spacing */
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Style for the image gallery */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-gallery img {
+    width: 48%;
+    margin: 0 0 20px; /* Increased margin for better spacing */
+    border-radius: 12px; /* Increased border radius for a rounded appearance */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #3498db; /* Background color for the images */
+}
+
+.image-gallery img:hover {
+    transform: scale(1.05); /* Slight scale effect on hover */
+    background-color: #e74c3c; /* Background color on hover */
+}
+
+
+a {
+    color: #3498db; /* Changed link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9; /* Changed link color on hover */
+}

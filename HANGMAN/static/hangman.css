@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap);
+
+body {
+    /* font-family: 'Arial', sans-serif; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecf0f1; /* Set a background color for the body */
+}
+
+header {
+    background-color: #2c3e50;
+    padding: 20px 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: #ecf0f1; /* Change text color */
+    text-decoration: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+}
+
+#hangman-container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 30px;
+    border: 2px solid #3498db;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-image: url('your-background-image.jpg'); /* Replace 'your-background-image.jpg' with your image file */
+    background-size: cover; /* Ensure the background image covers the container */
+}
+
+#word-display, #hint-display, #attempts {
+    font-size: 24px; /* Change font size */
+    color: #3498db; /* Change text color */
+    margin: 20px 0; /* Adjust margin */
+}
+
+#guess-input {
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #bdc3c7;
+    border-radius: 8px;
+    color: #333; /* Change text color */
+}
+
+button {
+    width: 120px; /* Adjust button width */
+    height: 40px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: box-shadow 0.25s, transform 0.25s; /* Change 'translate' to 'transform' */
+}
+
+button:hover {
+    background-color: #007bff;
+    box-shadow: 0px 5px 2px 0.1px rgb(71, 71, 71);
+    transform: translateX(5px); /* Change 'translate' to 'transform' and adjust value */
+}
+
+#result {
+    font-size: 36px; /* Change font size */
+    margin-top: 10px;
+    color: #e74c3c; /* Change text color */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hangman Leaderboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='dashboard.css') }}">
+</head>
+<body>
+
+    <header>
+
+        <h1>Hangman Leaderboard</h1>
+
+        <!-- <nav>
+            <a href="{{ url_for('hangman_game') }}">Hangman Game</a>
+                <!-- You can add more links to other pages here -->
+        </nav> -->
+    </header>
+  <table>
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Guesses</th>
+        <th>Win or Loss</th>
+      </tr>
+    </thead>
+    <tbody id="leaderboardBody">
+      <!-- Leaderboard content will go here -->
+    </tbody>
+  </table>
+
+  <script src="../static/dashboard.js"></script>
+  <script src="hangman.js"></script>
+</body>
+</html>

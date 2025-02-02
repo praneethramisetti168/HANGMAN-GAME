@@ -1,0 +1,33 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    width: 100%;
+    background:  #e5e7eb;
+position: relative;
+display: flex;
+
+}
+
+#interface{
+    width: calc(100% - 300px);
+
+}
+
+#interface .navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; 
+    padding: 15px 30px;
+    border-bottom: 3px solid #594ef7;
+}
+
+/* #interface .navigation{
+
+} */

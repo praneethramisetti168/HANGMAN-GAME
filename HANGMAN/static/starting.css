@@ -1,0 +1,141 @@
+/* Reset default margin and padding */
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('https://wallpaperaccess.com/full/264293.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;    
+
+
+  }
+
+  
+  /* Center loader */
+  .loader-wrapper {
+    display: flex;
+    background-color: black;
+    background-image: url('https://t3.ftcdn.net/jpg/03/23/12/42/360_F_323124237_SfGqpttZqU2mrMm61VPSWA2tKvc95l9O.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;  
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Loader styles */
+  .loader {
+    position: absolute;
+    border: 6px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    animation: right5231 0.9s linear infinite;
+  }
+  
+  .loader.loader1 {
+    width: 150px;
+    height: 150px;
+    border-left: 5px solid #35d30a;
+    border-radius: 50%;
+    animation-delay: 0 s;
+  }
+  
+  .loader.loader2 {
+    width: 120px;
+    height: 120px;
+    border-left: 5px solid #e0e708;
+    border-radius: 50%;
+    animation-delay: -0.15s;
+  }
+  
+  .loader.loader3 {
+    width: 90px;
+    height: 90px;
+    border-left: 5px solid #e61616;
+    border-radius: 50%;
+    animation-delay: -0.35s;
+  }
+  .loader.loader4 {
+    width: 60px;
+    height: 60px;
+    border-left: 5px solid #006eff;
+    border-radius: 50%;
+    animation-delay: -0.5s;
+  }
+  .loader.loader5 {
+    width: 30px;
+    height: 30px;
+    border-left: 5px solid #f700ff;
+    border-radius: 50%;
+    animation-delay: -0.75s;
+  }
+
+
+  #loading-text {
+    margin-top: 300px; 
+    font-size: 18px; 
+    font-family: 'YourCursiveFont', cursive;
+  font-size: 40px;
+  font-weight: 900;
+  color: #02f031; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  
+  @keyframes right5231 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+/* Animation for the Start button */
+@keyframes pulse {
+    0% {
+      transform: scale(1); /* Initial scale */
+    }
+    50% {
+      transform: scale(1.1); /* Slightly larger size */
+    }
+    100% {
+      transform: scale(1); /* Back to the original size */
+    }
+  }
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    to {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+  }
+
+ /* Apply animation to the Start button */
+#startButton {
+    margin: 50px auto; /* Center the button horizontally */
+    display: block; /* Make it a block element to center using margin */
+    padding: 50px 100px; /* Adjust padding for the button */
+    font-family: 'YourCursiveFont', cursive; /* Change font family */
+    font-size: 20px; /* Change font size */
+    color: #02f031; 
+    background-image: url('http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/6a45404d913e6d1.png');
+    background-size: cover;
+    background-color: transparent; /* Set a transparent background */
+    border: none; /* Remove default button border */
+    border-radius: 20px; /* Add border-radius for button */
+    cursor: pointer;
+    animation: pulse 1.5s ease-in-out infinite; /* Apply the 'pulse' animation infinitely */
+}
+  #hangman{
+    margin: 100px auto; /* Center the button horizontally */
+  display: block; /* Make it a block element to center using margin */
+  padding: 100px 400px; /* Adjust padding for the button */
+  font-family: Arial, sans-serif; /* Change font family */
+  font-size: 40px; /* Change font size */
+  background-size: cover; /* Adjust background size */
+  color: rgb(0, 0, 0); 
+  background-image: url('https://www.coolgenerator.com/Data/Textdesign/202311/bac4cc81e220d81c35359da2ed209d1d.png');
+  background-size: cover;
+  background-color: hsla(0, 100%, 100%, 0);;
+  border: none; 
+  border-radius: 5px; 
+  }

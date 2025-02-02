@@ -1,0 +1,38 @@
+<!-- templates/hangman.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="../static/hangman.css">
+    <script src="../static/hangman.js" ></script>
+</head>
+
+<body>
+    <audio id="correct-sound" src="{{ url_for('static', filename='correct.wav') }}"></audio>
+    <audio id="incorrect-sound" src="{{ url_for('static', filename='loss.wav') }}"></audio>
+    <header>
+        <h1>Hangman Game</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="{{ url_for('about_page') }}">About</a>
+            <a href="{{ url_for('dashboard_page') }}">Dashboard</a>
+        </nav>
+    </header>
+    
+    <div id="hangman-container">
+        <center>
+            <h2>Welcome to Hangman!</h2>
+            <div id="word-display"></div>
+            <div id="hint-display"></div>
+            <div id="attempts">Attempts left: <span id="attempts-left">10</span></div>
+            <input type="text" id="guess-input" placeholder="Enter a letter">
+            <button onclick="makeGuess()">Guess</button>
+            <div id="result"></div>
+        </center>
+    </div>
+</body>
+
+</html>
