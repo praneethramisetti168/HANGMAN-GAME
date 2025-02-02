@@ -1,0 +1,44 @@
+Hangman Game 🎮
+📌 Overview
+The Hangman Game is a classic word-guessing game where the player tries to guess a hidden word by suggesting letters within a limited number of attempts. If the player fails to guess the word before the chances run out, they lose the game.
+
+🔹 Features
+✅ Command-line interface for an interactive experience
+✅ Random word selection for each game session
+✅ Tracks incorrect guesses and displays remaining attempts
+✅ Hints to help players when stuck
+✅ Simple and beginner-friendly Python implementation
+
+⚙️ How to Run
+Clone this repository:
+bash
+Copy
+Edit
+git clone https://github.com/praneethramisetti168/HANGMAN-GAME.git
+cd hangman-game
+Run the Python script:
+bash
+Copy
+Edit
+python hangman.py
+
+
+🛠 Technologies Used
+Python
+Random module for word selection
+📌 How to Play
+The game selects a random word and displays blank spaces (_) for each letter.
+The player enters a letter guess.
+The letter appears in the correct position if it is in the word.
+If the guess is wrong, the player loses an attempt.
+The game continues until:
+The player correctly guesses the word (Win 🎉)
+The player runs out of attempts (Lose 💀)
+
+
+
+📜 License
+This project is open-source and free to use.
+
+CONTACT ME:
+praneethramisetti9@gmail.com
